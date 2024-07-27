@@ -50,12 +50,10 @@ public class DushardingApplication {
         User user2 = userMapper.findById(id);
         System.out.println(" ===> find = " + user2);
 
-//            System.out.println(" ===> 4. test delete ...");
-//            int delete = userMapper.delete(id);
-//            System.out.println(" ===> delete = " + delete);
+        System.out.println(" ===> 4. test delete ...");
+        int delete = userMapper.delete(id);
+        System.out.println(" ===> delete = " + delete);
 
-        User user3 = userMapper.findById(id);
-        System.out.println(" ===> find = " + user3);
     }
 
 }
