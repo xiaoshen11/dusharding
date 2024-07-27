@@ -1,6 +1,8 @@
-package com.bruce.dusharding;
+package com.bruce.dusharding.mybatis;
 
-import com.bruce.dusharding.demo.User;
+import com.bruce.dusharding.engine.ShardingContext;
+import com.bruce.dusharding.engine.ShardingResult;
+import com.bruce.dusharding.demo.model.User;
 import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.session.Configuration;

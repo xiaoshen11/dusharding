@@ -1,4 +1,4 @@
-package com.bruce.dusharding;
+package com.bruce.dusharding.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

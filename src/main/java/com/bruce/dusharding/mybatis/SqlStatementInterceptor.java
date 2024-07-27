@@ -1,6 +1,5 @@
-package com.bruce.dusharding;
+package com.bruce.dusharding.mybatis;
 
-import com.bruce.dusharding.demo.User;
 import org.apache.ibatis.executor.statement.StatementHandler;
 import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.plugin.Interceptor;
@@ -25,9 +24,7 @@ public class SqlStatementInterceptor implements Interceptor {
     public Object intercept(Invocation invocation) throws Throwable {
         StatementHandler handler = (StatementHandler)invocation.getTarget();
         BoundSql boundSql = handler.getBoundSql();
-
-
-
+        System.out.println(" ====>>> sql statement: " + boundSql.getSql());
 
         System.out.println(" ====>>> sql parameters: " + boundSql.getParameterObject());
         // todo 修改sql

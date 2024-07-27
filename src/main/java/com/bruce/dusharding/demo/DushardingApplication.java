@@ -1,10 +1,11 @@
-package com.bruce.dusharding;
+package com.bruce.dusharding.demo;
 
-import com.bruce.dusharding.demo.User;
-import com.bruce.dusharding.demo.UserMapper;
+import com.bruce.dusharding.config.ShardingAutoConfiguration;
+import com.bruce.dusharding.mybatis.ShardingMapperFactoryBean;
+import com.bruce.dusharding.demo.mapper.UserMapper;
+import com.bruce.dusharding.demo.model.User;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,7 +14,7 @@ import org.springframework.context.annotation.Import;
 
 @SpringBootApplication
 @Import(ShardingAutoConfiguration.class)
-@MapperScan(value = "com.bruce.dusharding.demo", factoryBean = ShardingMapperFactoryBean.class)
+@MapperScan(value = "com.bruce.dusharding.demo.mapper", factoryBean = ShardingMapperFactoryBean.class)
 public class DushardingApplication {
 
     public static void main(String[] args) {

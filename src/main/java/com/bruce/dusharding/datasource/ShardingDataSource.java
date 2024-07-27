@@ -1,6 +1,9 @@
-package com.bruce.dusharding;
+package com.bruce.dusharding.datasource;
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
+import com.bruce.dusharding.engine.ShardingContext;
+import com.bruce.dusharding.engine.ShardingResult;
+import com.bruce.dusharding.config.ShardingProperties;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
 import java.util.LinkedHashMap;

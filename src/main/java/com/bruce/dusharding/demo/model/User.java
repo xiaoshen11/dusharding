@@ -1,4 +1,4 @@
-package com.bruce.dusharding.demo;
+package com.bruce.dusharding.demo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
