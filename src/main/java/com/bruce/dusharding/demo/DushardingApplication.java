@@ -27,7 +27,7 @@ public class DushardingApplication {
     @Bean
     ApplicationRunner applicationRunner(){
         return x -> {
-            for (int id = 1; id <= 10; id++) {
+            for (int id = 1; id <= 60; id++) {
                 test(id);
             }
         };
@@ -50,9 +50,9 @@ public class DushardingApplication {
         User user2 = userMapper.findById(id);
         System.out.println(" ===> find = " + user2);
 
-        System.out.println(" ===> 4. test delete ...");
-        int delete = userMapper.delete(id);
-        System.out.println(" ===> delete = " + delete);
+//        System.out.println(" ===> 4. test delete ...");
+//        int delete = userMapper.delete(id);
+//        System.out.println(" ===> delete = " + delete);
 
     }
 
